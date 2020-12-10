@@ -4,31 +4,74 @@
 <head>
   <meta charset="UTF-8">
   <title>CSS Review</title>
-  <link rel="stylesheet" href="reset.css">
+  <!--Bring in bootstrap stylesheet-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets\css\styles.css">
 </head>
 
-<body>
-  <div class="container">
-    <nav class="navbar">
-      <ul>
-        <li>
-          <a class="menu" href="#">Home</a>
-        </li>
-        <li>
-          <a class="menu" href="#">Plots</a>
-        </li>
-        <li>
-          <a class="menu" href="#">Comparisons</a>
-        </li>
-        <li>
-          <a class="menu" href="#">Data</a>
-        </li>
-      </ul>
+<body class="p-3 mb-2 bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <a class="navbar-brand bg-info p-3 mb-2 text-white" href="#">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Latitude</a>
+                  <a class="dropdown-item" href="#">Other</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Other</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Data</a>
+              </li>
+            </ul>
+          </div>
+      
+    
     </nav>
-    <header>
-      <h1>Latitutde</h1>
-    </header>
-    </main>
-  </div>
+
+    <div class="container p-3">
+        <div class="row p-5">
+            <div class="col-8 border bg-white p-3">
+        
+                <h2 class= " p-3 mb-2 text-info "> Summary: Lat vs. X </h2>
+                <img src="Resources\lat_temp.png" class="rounded float-left col-6" alt="...">
+                <p class="text-left">In this example, you'll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, you'll be utilizing a simple Python library, the OpenWeatherMap API, and a little common sense to create a representative model of weather across world cities.
+                    Your objective is to build a series of scatter plots to showcase the following relationships:
+                    
+                    Temperature (F) vs. Latitude
+                    Humidity (%) vs. Latitude
+                    Cloudiness (%) vs. Latitude
+                    Wind Speed (mph) vs. Latitude
+                    
+                    Your final notebook must:
+                    
+                    Randomly select at least 500 unique (non-repeat) cities based on latitude and longitude.
+                    Perform a weather check on each of the cities using a series of successive API calls.
+                    Include a print log of each city as it's being processed with the city number and city name.
+                    Save both a CSV of all data retrieved and png images for each scatter plot.</p>
+
+            </div>
+            <div class="col-md border bg-white p-3">
+                <h2 class= " p-3 mb-2 text-info p-3 "> Visualizations</h2>
+                <img src="Resources\lat_cloud.png" class="rounded float-right col-6" alt="...">
+                <img src="Resources\lat_humidity.png" class="rounded float-right col-6" alt="...">
+                <img src="Resources\lat_wind.png" class="rounded float-right col-6" alt="...">
+                <img src="Resources\lat_temp.png" class="rounded float-right col-6" alt="...">
+            </div>
+        </div>
+    </div>
 </body>
