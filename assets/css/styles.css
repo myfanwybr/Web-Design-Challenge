@@ -1,3 +1,6 @@
-@media (min-width: 768px) and (max-width: 991.98px) { 
-  body }
+@media (max-width: 700px) {
+#navbarAll {background-color: #17a2b8} }
 
+@media (min-width: 725px){
+#navbarAll navbar {background-color:white}
+}
