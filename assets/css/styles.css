@@ -1,6 +1,18 @@
-@media (max-width: 700px) {
+@media (min-width: 725px){
+  #navbarAll{background-color:white}
+}
+
+@media
+(max-width: 700px) {
 #navbarAll {background-color: #17a2b8} }
 
-@media (min-width: 725px){
-#navbarAll navbar {background-color:white}
+
+.item {
+  vertical-align: top;
+  display: block;
+  text-align: center;}
+
+
+.caption {
+    display: block;
 }
