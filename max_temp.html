@@ -29,7 +29,7 @@
                   <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
                   <a class="dropdown-item" href="humidity.html">Humidity</a>
                   <a class="dropdown-item" href="cloud.html">Cloudiness</a>
-                  <a class="dropdown-item" href="humidity.html">Wind Speed</a>
+                  <a class="dropdown-item" href="wind.html">Wind Speed</a>
 
 
                   
@@ -44,43 +44,43 @@
             </ul>
           </div>
     </nav>
-<div class=" container">
+
+
+
         <!--row #1-->
-     <div class="row p-4">
-            <div class="col-md-8 col-sm 12 border bg-white">
+     <div class="row p-4 justify-content-around">
+            <div class="col-md-7 col-sm-12 border bg-white" >
             <!--header-->
-                <h2 class= "p-3 mb-2 text-info"> Max Temperature </h2>
-                <hr/>
-                <!--image max temp--> 
-              <div class="item">               
-                <img src="Resources\lat_temp.png" class="rounded float-left" id="max">
-            
-                <span class="caption">As expected, the wetaher becomes significantly warmer 
-                    as one approaches the equator (0 Deg. Latitude). More interestingly, however, 
-                    is the fact the southern hemisphere tends to be warmer this time of years 
-                    than the northern hemisphere. This may be due to the tilt of the earth at the 
-                    time of year this data was gathered.</span>
-  
-     
-            </div> 
-            </div>   
+            <article>
+                <h2 class= "p-3 mb-2 text-info"> Max Temperature</h2>
+                  <hr/>             
+                      <img src="Resources\lat_temp.png" class="rounded mx-auto d-block" id="max">
+
+                      <span class="caption p-3">As expected, the weather becomes significantly warmer 
+                        as one approaches the equator (0 Deg. Latitude). More interestingly, however, 
+                        is the fact the southern hemisphere tends to be warmer this time of years 
+                        than the northern hemisphere. This may be due to the tilt of the earth at the 
+                          time of year this data was gathered.</span>
+                        </article>            
+              </div>  
                    
-        <div class="col-md-4 col-sm 12 border bg-white ">
-              <h2 class= " p-3 mb-2 text-info p-3 "> Visualizations</h2>
-                <hr/>
-                <a href="max_temp.html">
-                    <img src="Resources\lat_temp.png" class="rounded float-right col-md-6 col-sm-3">
-                </a>
-                <a href="humidity.html">
-                    <img src="Resources\lat_humidity.png" class="rounded float-right col-md-6 col-sm-3">
-                </a>
-                <a href="cloud.html">
-                  <img src="Resources\lat_cloud.png" class="rounded float-right col-md-6 col-sm-3">
-                </a>
-                 <a href="wind.html">
-                  <img src="Resources\lat_wind.png" class="rounded float-right col-md-6 col-sm-3">
-                </a>
-            </div> 
-        </div>
-</div>
+              <div class="col-md-4 col-sm 12 border bg-white flex-column">
+                    <h2 class= " p-3 mb-2 text-info p-3 "> Visualizations</h2>
+                      <hr/>
+                        <a href="max_temp.html">
+                               <img src="Resources\lat_temp.png" class="img-fliud rounded float-right col-md-6 col-sm-3">
+                        </a>
+                         <a href="humidity.html">
+                               <img src="Resources\lat_humidity.png" class="rounded float-right col-md-6 col-sm-3">
+                           </a>
+                         <a href="cloud.html">
+                              <img src="Resources\lat_cloud.png" class="rounded float-right col-md-6 col-sm-3">
+                          </a>
+                         <a href="wind.html">
+                              <img src="Resources\lat_wind.png" class="rounded float-right col-md-6 col-sm-3">
+                         </a>
+                        </div> 
+                </div> 
+    
+      
 </body>
