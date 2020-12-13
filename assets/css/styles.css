@@ -43,3 +43,6 @@ span{
   color: grey;
   ;
 }
+
+td{text-transform:"capitalize"}
+tr{text-transform:"capitalize"}
