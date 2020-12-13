@@ -16,3 +16,19 @@
 .caption {
     display: block;
 }
+
+h2{
+  font-family: "Times New Roman";
+  font-weight: bold;
+}
+
+p{
+  font-family: "Helvetica";
+  color: grey;
+  ;
+}
+
+#lat{  font-family: "Times New Roman";
+  font-weight: bold;
+
+}
