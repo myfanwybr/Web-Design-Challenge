@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Analysis/Wind</title>
+  <!--Bring in bootstrap stylesheet-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets\css\styles.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<!--create navbar-->
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light " id="navbarAll">
+        <a class="navbar-brand bg-info p-2 mb-2 text-white" href="index.html" id="lat">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div id=# class="dropdown-menu" aria-labelledby="navbarDropdown" role="navigation">
+                  <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloud.html">Cloudiness</a>
+                  <a class="dropdown-item" href="wind.html">Wind Speed</a>
+
+
+                  
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Comparison.html"> Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html"> Data</a>
+              </li>
+            </ul>
+          </div>
+    </nav>
+
+
+
+        <!--row #1-->
+     <div class="row p-4 justify-content-around">
+            <div class="col-md-7 col-sm-12 border bg-white" >
+            <!--header-->
+            <article>
+                <h2 class= "p-3 mb-2 text-info"> Wind Speed </h2>
+                  <hr/>             
+                      <img src="Resources\lat_wind.png" class="rounded mx-auto d-block" id="max">
+
+                      <span class="caption p-3">There are many factors that influence windspeed. 
+                          This graph shows that windspeed slightly increases when cities are located
+                          farther away from the equator. This could be because of the way that wind
+                          circulates on earth and the forces created when cold and warm fronts meet.
+                         </span>
+                        </article>            
+              </div>  
+                   
+              <div class="col-md-4 col-sm 12 border bg-white flex-column">
+                    <h2 class= " p-3 mb-2 text-info p-3 "> Visualizations</h2>
+                      <hr/>
+                        <a href="max_temp.html">
+                               <img src="Resources\lat_temp.png" class="img-fliud rounded float-right col-md-6 col-sm-3">
+                        </a>
+                         <a href="humidity.html">
+                               <img src="Resources\lat_humidity.png" class="rounded float-right col-md-6 col-sm-3">
+                           </a>
+                         <a href="cloud.html">
+                              <img src="Resources\lat_cloud.png" class="rounded float-right col-md-6 col-sm-3">
+                          </a>
+                         <a href="wind.html">
+                              <img src="Resources\lat_wind.png" class="rounded float-right col-md-6 col-sm-3">
+                         </a>
+                        </div> 
+                </div> 
