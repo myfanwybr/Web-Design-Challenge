@@ -22,6 +22,11 @@ h2{
   font-weight: bold;
 }
 
+h4{
+  font-family: "Times New Roman";
+  font-weight: bold;
+}
+
 p{
   font-family: "Helvetica";
   color: grey;
