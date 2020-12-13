@@ -29,7 +29,7 @@
                   <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
                   <a class="dropdown-item" href="humidity.html">Humidity</a>
                   <a class="dropdown-item" href="cloud.html">Cloudiness</a>
-                  <a class="dropdown-item" href="humidity.html">Wind Speed</a>
+                  <a class="dropdown-item" href="wind.html">Wind Speed</a>
 
 
                   
@@ -47,31 +47,39 @@
   
         <div class="row justify-content-around p-4">
 
-            <div class="col-md-6 col-sm 12 border bg-white">
+            <div class="col-md-7 col-sm 12 border bg-white">
         
-                <h2 class= " p-3 mb-2 text-info "> Summary: Lat vs. X </h2>
+                <h2 class= " p-3 mb-3 text-info "> Summary: Lat vs. X </h2>
                 <hr/>
-                <img src="Resources\lat_temp.png" class="rounded float-left col-6" alt="...">
-                <p class="text-left">In this example, you'll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, you'll be utilizing a simple Python library, the OpenWeatherMap API, and a little common sense to create a representative model of weather across world cities.
-                    Your objective is to build a series of scatter plots to showcase the following relationships:
-                    
+                <img src="Resources\lat_temp.png" class="rounded float-left col-8" alt="...">
+                <p class="text-auto p-2">For this project, I created a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, I utilized a simple Python library, the OpenWeatherMap API, and a little common sense to create a representative model of weather across world cities.
+                  <br> 
+                  <br>
+                  My objective was to build a series of scatter plots to showcase the following relationships:
+                  <br>
+                
                     Temperature (F) vs. Latitude
+                    <br>
                     Humidity (%) vs. Latitude
+                    <br>
                     Cloudiness (%) vs. Latitude
+                    <br>
                     Wind Speed (mph) vs. Latitude
-                    
-                    Your final notebook must:
-                    
-                    Randomly select at least 500 unique (non-repeat) cities based on latitude and longitude.
-                    Perform a weather check on each of the cities using a series of successive API calls.
-                    Include a print log of each city as it's being processed with the city number and city name.
-                    Save both a CSV of all data retrieved and png images for each scatter plot.</p>
+                  <br>
+                  <br>  
+                    My final notebook included:
+                   <br> 
+                   
+                    Randomly selecting at least 500 unique (non-repeat) cities based on latitude and longitude.
+                    A weather check on each of the cities using a series of successive API calls.
+                    A print log of each city as it's being processed with the city number and city name.
+                    And exporting a CSV of all data retrieved and png images for each scatter plot.</p>
 
             </div>
             
-            <div class="col-md-4 col-sm-12 border bg-white p-3 md-3 " >
+            <div class="col-md-4 col-sm-12 border bg-white " >
              
-              <h2 class= " p-3 mb-2 text-info p-3 "> Visualizations</h2>
+              <h2 class= " p-3 mb-3 text-info "> Visualizations</h2>
               <hr/>
 
             <a href="max_temp.html">
